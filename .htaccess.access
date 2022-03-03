@@ -1,0 +1,32 @@
+
+
+Options -Indexes
+
+Options -MultiViews
+
+RewriteEngine on
+Options +FollowSymlinks
+
+RewriteEngine on
+
+# remove .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# rewrite index page
+RewriteRule ^home index.html [NC,L]
+RewriteRule ^about-us about_us.html [NC,L]
+RewriteRule ^buy-book buy_book.html [NC,L]
+RewriteRule ^latest-updates latest_updates.html [NC,L]
+RewriteRule ^save-nightlife savenightlife.html [NC,L]
+RewriteRule ^contact contact.html [NC,L]
+
+
+
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+# block access to htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
