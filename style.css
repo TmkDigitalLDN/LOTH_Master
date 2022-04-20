@@ -1751,6 +1751,8 @@ margin-bottom: 150px; }
 .footer-about ul li {
   display: inline-block;
   margin-right: 15px;
+  background-color: #ffc600;
+  border-radius:20%;
 }
 .footer-about ul li:last-child {
   margin-right: 0;
@@ -1917,6 +1919,9 @@ p.form-message.success, p.form-message.error {
 .contact-address ul li .single-address .cont {
   padding-left: 20px;
 }
+.social-media{
+  color: white;
+}
 
 .footer_address{
   margin-top: 20px;
@@ -1928,6 +1933,7 @@ p.form-message.success, p.form-message.error {
 
 .about_footer{
   padding-top: 20px;
+ 
 }
 .contact-address ul li .single-address .cont p {}
 .map {}
