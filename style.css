@@ -1751,8 +1751,12 @@ margin-bottom: 150px; }
 .footer-about ul li {
   display: inline-block;
   margin-right: 15px;
-  background-color: #ffc600;
+
   border-radius:20%;
+}
+
+i{
+  color: #fff;
 }
 .footer-about ul li:last-child {
   margin-right: 0;
@@ -1761,7 +1765,7 @@ margin-bottom: 150px; }
   width: 35px;
   line-height: 35px;
   font-size: 15px;
-  color: #fff;
+  color: #ffc600;
   border-radius: 50%;
   text-align: center;
 
@@ -1769,10 +1773,13 @@ margin-bottom: 150px; }
   transition: all 0.4s linear;
 }
 .footer-title a:hover {
-  background-color: #ffc600;
   color: #021d3a;
   -webkit-transition: all 0.2s linear;
   transition: all 0.4s linear;
+}
+
+.mt-20{
+  color: #fff;
 }
 .footer-title h6 {
   font-size: 18px;
@@ -1933,7 +1940,11 @@ p.form-message.success, p.form-message.error {
 
 .about_footer{
   padding-top: 20px;
+  min-width:150px;
  
+}
+img{
+  object-fit:cover;
 }
 .contact-address ul li .single-address .cont p {}
 .map {}
